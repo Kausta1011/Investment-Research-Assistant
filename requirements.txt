@@ -1,0 +1,28 @@
+# Core LLM / agent framework
+langgraph>=0.2.50
+langchain>=0.3.0
+langchain-core>=0.3.0
+langchain-anthropic>=0.3.0
+langchain-openai>=0.2.0
+langchain-google-genai>=2.0.0
+
+# Data sources (all free / public)
+yfinance>=0.2.50          # Financials, price history
+feedparser>=6.0.11        # Google News RSS
+requests>=2.32.0          # SEC EDGAR, Reddit public JSON
+beautifulsoup4>=4.12.0    # HTML parsing fallback
+lxml>=5.3.0
+
+# Dashboard
+plotly>=5.24.0
+jinja2>=3.1.4
+
+# Infra
+python-dotenv>=1.0.1
+diskcache>=5.6.3
+pydantic>=2.9.0
+rich>=13.9.0              # Pretty CLI output
+
+# Tests
+pytest>=8.3.0
+pytest-mock>=3.14.0
