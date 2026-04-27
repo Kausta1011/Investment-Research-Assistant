@@ -136,6 +136,7 @@ def main(argv: list[str] | None = None) -> int:
                 traceback.print_exc()
             exit_code = 1
             continue
+        
 
         try:
             from datetime import datetime
