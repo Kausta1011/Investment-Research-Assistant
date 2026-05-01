@@ -10,7 +10,6 @@ sys.path.insert(0, str(ROOT))
 
 import pytest
 
-
 @pytest.fixture(autouse=True)
 def _force_multi_mode():
     """Reset settings.llm_mode to 'multi' for every test so the LLM-stubbed
