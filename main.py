@@ -65,6 +65,7 @@ def _print_summary(ticker: str, state: dict, dashboard_path: Path) -> None:
             console.print(f"  • {e}")
 
 
+
 def _print_batch_summary(results: list[dict]) -> None:
     if len(results) <= 1:
         return
