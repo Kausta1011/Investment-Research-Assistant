@@ -68,7 +68,9 @@ def test_analyst_happy_path(sample_fundamentals, sample_price_history):
          patch.object(a, "fetch_analyst_ratings", return_value=[]), \
          patch.object(a, "fetch_recent_filings", return_value=[]), \
          patch.object(a, "get_llm", return_value=llm):
-        out = a.analyst_node({"ticker": "AAPL"})
+        out = a.analyst_node({"ticker": "AAPL"}) #Why hard coded
+
+
 
     assert out["fundamentals"]["ticker"] == "AAPL"
     assert out["analyst_summary"]["valuation_view"] == "fair"
