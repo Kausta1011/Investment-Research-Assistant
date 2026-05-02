@@ -114,6 +114,7 @@ def sample_state(sample_news, sample_fundamentals, sample_price_history):
                 "url": "https://reddit.com/r/wsb/x",
                 "created_utc": 1713398400,
             }
+            
         ],
         "news_summary": {
             "themes": ["earnings beat", "product launch"],

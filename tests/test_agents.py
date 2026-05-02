@@ -12,6 +12,7 @@ def _fake_llm_response(json_text: str):
     return llm
 
 
+
 def test_extract_json_from_fenced_block():
     from src.agents._common import extract_json
 
@@ -19,11 +20,13 @@ def test_extract_json_from_fenced_block():
     assert extract_json(text) == {"verdict": "BUY", "confidence": "high"}
 
 
+
 def test_extract_json_from_prose():
     from src.agents._common import extract_json
 
     text = 'Here is the object: {"a": 1, "b": [1,2,3]} — let me know.'
     assert extract_json(text) == {"a": 1, "b": [1, 2, 3]}
+
 
 
 def test_extract_json_handles_none():
