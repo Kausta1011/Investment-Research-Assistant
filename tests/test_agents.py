@@ -12,7 +12,6 @@ def _fake_llm_response(json_text: str):
     return llm
 
 
-
 def test_extract_json_from_fenced_block():
     from src.agents._common import extract_json
 
