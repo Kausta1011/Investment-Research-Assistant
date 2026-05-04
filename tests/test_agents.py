@@ -28,7 +28,6 @@ def test_extract_json_from_prose():
     assert extract_json(text) == {"a": 1, "b": [1, 2, 3]}
 
 
-
 def test_extract_json_handles_none():
     from src.agents._common import extract_json
 
